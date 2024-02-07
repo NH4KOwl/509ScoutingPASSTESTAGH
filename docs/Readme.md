@@ -6,4 +6,4 @@
 
 ## [Excel examples and VBA code](../docs)
 
-## [Scouting Pass 2024](../2024)
+## [Scouting Pass 2024](crescendo_config.js)
