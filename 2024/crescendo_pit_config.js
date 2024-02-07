@@ -24,8 +24,7 @@ var config_data = `
       "type": "radio",
       "choices": {
         "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
+        "t": "Tank<br>",
         "m": "Mechanum<br>",
         "o": "Other"
       },
