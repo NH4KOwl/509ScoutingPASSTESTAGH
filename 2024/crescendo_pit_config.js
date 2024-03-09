@@ -63,17 +63,14 @@ var config_data = `
       "code": "nob",
       "type": "number"
     },
-    { "name": "Floor pickup Cones",
-      "code": "fco",
+    { "name": "Floor pickup Notes",
+      "code": "fcn",
       "type": "bool"
     },
-    { "name": "Floor pickup Cubes",
-      "code": "fcu",
-      "type": "bool"
-    },
-    { "name": "Cross Charging Station",
-      "code": "ccs",
-      "type": "bool"
+    { "name": "# of Auto Notes",
+      "code": "aun",
+      "type": "counter",
+      "defaultValue": "0"
     },
     { "name": "Autos",
       "code": "aut",
