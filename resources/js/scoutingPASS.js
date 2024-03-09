@@ -11,7 +11,7 @@ var initialX = null;
 var xThreshold = 0.3;
 var slide = 0;
 var enableGoogleSheets = false;
-var pitScouting = false;
+var pitScouting = true;
 var checkboxAs = 'YN';
 
 // Options
@@ -649,7 +649,7 @@ function addElement(table, idx, data) {
 
 function configure() {
   try {
-    var mydata = JSON.parse(among_us_balls);
+    var mydata = JSON.parse(config_data);
   } catch (err) {
     console.log(`Error parsing configuration file`)
     console.log(err.message)
