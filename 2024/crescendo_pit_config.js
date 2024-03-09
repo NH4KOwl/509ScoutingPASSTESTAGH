@@ -55,8 +55,8 @@ var config_data = `
         "n": "Neo<br>",
         "f": "Falcon<br>",
         "c": "CIM<br>",
-        "k": "Kraken",
-        "x": "Other<br>"
+        "k": "Kraken<br>",
+        "x": "Other"
       },
       "defaultValue":"x"
     },
@@ -94,3 +94,4 @@ var config_data = `
   "postmatch": [
   ]
 }`;
+//documentation
