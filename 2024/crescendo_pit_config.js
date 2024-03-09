@@ -55,6 +55,7 @@ var config_data = `
         "n": "Neo<br>",
         "f": "Falcon<br>",
         "c": "CIM<br>",
+        "k": "Kraken",
         "x": "Other<br>"
       },
       "defaultValue":"x"
@@ -69,8 +70,7 @@ var config_data = `
     },
     { "name": "# of Auto Notes",
       "code": "aun",
-      "type": "counter",
-      "defaultValue": "0"
+      "type": "counter"
     },
     { "name": "Autos",
       "code": "aut",
