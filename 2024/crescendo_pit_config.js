@@ -72,7 +72,7 @@ var config_data = `
       "code": "aun",
       "type": "counter"
     },
-    { "name": "Autos",
+    { "name": "Autos Descriptions",
       "code": "aut",
       "type": "text",
       "size": 20,
