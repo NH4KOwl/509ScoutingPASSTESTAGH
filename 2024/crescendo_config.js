@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "",
+      "defaultValue": "", 
       "required": "false"
     },
     { "name": "Match Level",
@@ -183,7 +183,7 @@ var config_data = `
       "code": "co",
       "type": "text",
       "size": 15,
-      "maxSize": 999
+      "maxSize": 99999
     }
   ]
 }`;
