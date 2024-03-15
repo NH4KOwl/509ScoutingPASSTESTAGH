@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "reading", 
+      "defaultValue": "2024reading", 
       "required": "false"
     },
     { "name": "Match Level",
@@ -61,7 +61,7 @@ var config_data = `
       "filename": "2024/field_image.png",
       "clickRestriction": "one",
       "shape": "circle 5 black red true"
-    },
+    }
   ],
   "auton": [
     { "name": "Leave Starting Zone",
@@ -190,5 +190,3 @@ var config_data = `
     }
   ]
 }`;
-
-// "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
