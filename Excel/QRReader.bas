@@ -67,39 +67,67 @@ Sub saveData(inp As String)
     mapper.add "r", "robot"
     mapper.add "t", "teamNumber"
 
-    ' 2023 Fields
+    ' 2024 Fields
     ' Auto
     mapper.add "as", "autoStartingLocation"
-    mapper.add "asg", "autoScoredGrid"
-    mapper.add "acc", "autoCrossedCable"
-    mapper.add "acs", "autoCrossedChargingStation"
-    mapper.add "am", "autoMobility"
-    mapper.add "ad", "autoDocked"
+    mapper.add "al", "autoLeaveStart"
+    mapper.add "aas", "autoAmpScore"
+    mapper.add "ass", "autoSpeakerScore"
     
     ' Teleop
-    mapper.add "tct", "cycleTimes"
-    mapper.add "tsg", "scoredGrid"
-    mapper.add "tfc", "feedCount"
-    mapper.add "wf", "wasFed"
-    mapper.add "wd", "wasDefended"
-    mapper.add "who", "whoDefended"
-    mapper.add "lnk", "smartLinks"
-    mapper.add "fpu", "floorPickUp"
-    mapper.add "dt", "dockingTime"
-    mapper.add "fs", "finalState"
-    mapper.add "dn", "numOfRobotsDocked"
+    mapper.add "tas", "AmpScore"
+    mapper.add "tss", "SpeakerScore"
+    mapper.add "tta", "TimesAmplified"
+    mapper.add "tpu", "Pickup"
     
     'Endgame
+    mapper.add "dt", "StageTimer"
+    mapper.add "fs", "FinalStatus"
+    mapper.add "nit", "NoteInTrap"
+
+    'Post Match
     mapper.add "ds", "driverSkill"
-    mapper.add "ls", "linksScored"
     mapper.add "dr", "defenseRating"
-    mapper.add "sd", "swerveDrive"
     mapper.add "sr", "speedRating"
     mapper.add "die", "diedOrTipped"
     mapper.add "tip", "tippy"
-    mapper.add "dc", "droppedCones"
+    mapper.add "dn", "droppedNotes"
     mapper.add "all", "goodPartner"
     mapper.add "co", "comments"
+
+    ' 2023 Fields
+    ' Auto
+    'mapper.add "as", "autoStartingLocation"
+    'mapper.add "asg", "autoScoredGrid"
+    'mapper.add "acc", "autoCrossedCable"
+    'mapper.add "acs", "autoCrossedChargingStation"
+    'mapper.add "am", "autoMobility"
+    'mapper.add "ad", "autoDocked"
+    
+    ' Teleop
+    'mapper.add "tct", "cycleTimes"
+    'mapper.add "tsg", "scoredGrid"
+    'mapper.add "tfc", "feedCount"
+    'mapper.add "wf", "wasFed"
+    'mapper.add "wd", "wasDefended"
+    'mapper.add "who", "whoDefended"
+    'mapper.add "lnk", "smartLinks"
+    'mapper.add "fpu", "floorPickUp"
+    'mapper.add "dt", "dockingTime"
+    'mapper.add "fs", "finalState"
+    'mapper.add "dn", "numOfRobotsDocked"
+    
+    'Endgame
+    'mapper.add "ds", "driverSkill"
+    'mapper.add "ls", "linksScored"
+    'mapper.add "dr", "defenseRating"
+    'mapper.add "sd", "swerveDrive"
+    'mapper.add "sr", "speedRating"
+    'mapper.add "die", "diedOrTipped"
+    'mapper.add "tip", "tippy"
+    'mapper.add "dc", "droppedCones"
+    'mapper.add "all", "goodPartner"
+    'mapper.add "co", "comments"
 
     If inp = "Camera" Then
         Exit Sub
