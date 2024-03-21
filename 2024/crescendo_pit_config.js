@@ -45,18 +45,6 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Drivetrain Motor",
-      "code": "mot",
-      "type": "radio",
-      "choices": {
-        "n": "Neo<br>",
-        "f": "Falcon<br>",
-        "c": "CIM<br>",
-        "k": "Kraken<br>",
-        "x": "Other"
-      },
-      "defaultValue":"x"
-    },
     {"name": "Pass under stage?", 
      "code": "sta", 
      "type": "bool"
