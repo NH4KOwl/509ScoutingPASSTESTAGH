@@ -4,6 +4,10 @@ var config_data = `
   "page_title": "Crescendo",
   "pitConfig": "true",
   "prematch": [
+    {"name": "Scouter Initials", 
+      "code": "s",
+      "type": "text"
+      },
     { "name": "Team Number",
       "code": "t",
       "type": "number"
@@ -12,6 +16,11 @@ var config_data = `
       "code": "wid",
       "type": "number",
       "defaultValue": "0"
+    },
+    {"name": "Length", 
+     "code": "l", 
+     "type": "number", 
+     "defaultValue": "0"
     },
     { "name": "Weight",
       "code": "wei",
@@ -36,18 +45,6 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1<br>",
-        "2": "L2<br>",
-        "3": "L3<br>",
-        "4": "L4<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
-    },
     { "name": "Drivetrain Motor",
       "code": "mot",
       "type": "radio",
@@ -60,9 +57,36 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
+    {"name": "Pass under stage?", 
+     "code": "sta", 
+     "type": "bool"
+    },
+    {"name": "April tag alignment?",
+     "code": "apr", 
+     "type": "bool"
+    },
+    {"name": "Can score: ", 
+     "code": "sco", 
+     "type": "radio",
+     "choices": {
+        "n": "Amp<br>", 
+        "f": "Speaker<br>", 
+        "c": "Both<br>", 
+        "k": "Not Scouted"
+     },
+     "defaultValue": "k"
+    },
+    {"name": "Can climb/Trap score: ", 
+      "code": "cli", 
+      "type": "radio",
+      "choices": {
+        "n": "Climb<br>", 
+        "f": "Score Trap<br>", 
+        "c": "Both<br>", 
+        "b": "Neither<br>",
+        "k": "Not Scouted"
+      },
+      "defaultValue": "k"
     },
     { "name": "Floor pickup Notes",
       "code": "fcn",
@@ -91,12 +115,6 @@ var config_data = `
       "type": "text",
       "size": 20,
       "maxSize": 300
-    },
-    { "name": "Scouting Method /<br>Program (ScoutingPASS?)",
-      "code": "sct",
-      "type": "text",
-      "size": 20,
-      "maxSize": 250
     }
   ],
   "auton": [
