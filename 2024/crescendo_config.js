@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024reading", 
+      "defaultValue": "2024revere", 
       "required": "false"
     },
     { "name": "Match Level",
