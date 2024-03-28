@@ -91,6 +91,16 @@ var config_data = `
       "code": "tta",
       "type": "counter"
     },
+    {
+      "name": "Ferry Notes?",
+      "code": "fn",
+      "type": "bool"
+    },
+    {
+      "name": "Number Ferried",
+      "code": "nf",
+      "type": "counter"
+    },
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
