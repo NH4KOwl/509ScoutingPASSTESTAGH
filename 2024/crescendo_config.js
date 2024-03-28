@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2024revere", 
+      "defaultValue": "2024nedistrict", 
       "required": "false"
     },
     { "name": "Match Level",
