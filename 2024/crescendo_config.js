@@ -1,8 +1,8 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
-  "page_title": "Crescendo",
+  "title": "Scouting PASS 2025",
+  "page_title": "Reefscape",
   "checkboxAs": "10",
   "prematch": [
     { "name": "Scouter Initials",
@@ -55,10 +55,10 @@ var config_data = `
       "min": 1,
       "max": 99999
     },
-    { "name": "Auto Start Position",
+    { "name": "Starting Location",
       "code": "as",
       "type": "clickable_image",
-      "filename": "2024/field_image.png",
+      "filename": "2025field_image.png",
       "clickRestriction": "one",
       "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
       "shape": "circle 5 black red true"
@@ -69,43 +69,47 @@ var config_data = `
       "code": "al",
       "type": "bool"
     },
-    { "name": "Amp Scores",
+    { "name": "Auto Coral Scored",
+      "code": "acs",
+      "type": "counter"
+    },
+    { "name": "Auto Algae Scored",
       "code": "aas",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "ass",
-      "type": "counter"
+      { "name": "Knock Lolipops Over",
+      "code": "akl",
+      "type": "bool"
     }
   ],
   "teleop": [
-    { "name": "Amp Scores",
-      "code": "tas",
+    { "name": "Coral Scored",
+      "code": "tc",
+      "tyspe": "counter"
+    },
+    { "name": "Processor Algae Scored",
+      "code": "tpa",
       "type": "counter"
     },
-    { "name": "Speaker Scores",
-      "code": "tss",
-      "type": "counter"
-    },
-    { "name": "Times Amplified",
-      "code": "tta",
+    { "name": "Barge Algae Scored",
+      "code": "tba",
       "type": "counter"
     },
     {
-      "name": "Ferry Notes?",
-      "code": "fn",
+      "name": "Defense?",
+      "code": "d",
       "type": "bool"
     },
     {
-      "name": "Number Ferried",
-      "code": "nf",
+      "name": "Co-op",
+      "code": "co",
       "type": "counter"
     },
     { "name": "Pickup From",
       "code": "tpu",
       "type": "radio",
       "choices": {
-        "s": "Source<br>",
+        "s": "Human<br>",
         "f": "Floor<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
@@ -114,8 +118,8 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Stage Timer",
-      "code": "dt",
+    { "name": "Climb Timer",
+      "code": "ct",
       "type": "timer"
     },
     { "name": "Final Status",
@@ -123,24 +127,15 @@ var config_data = `
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
-        "o": "Onstage<br>",
-        "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
-        "a": "Attempted but failed<br>",
+        "cd": "Climbed Deep Cage<br>",
+        "cs": "Climbed Shallow Cage<br>",
+        "c": "Continue Scoring<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
-    },
-    { "name": "Note in Trap",
-      "code": "nit",
-      "type": "bool"
-    },
-    { "name": "Pass under Stage",
-      "code": "pus",
-      "type": "bool"
     }
   ],
-  "postmatch": [
+  "postgame": [
     { "name": "Driver Skill",
       "code": "ds",
       "type": "radio",
@@ -184,8 +179,8 @@ var config_data = `
       "code": "tip",
       "type": "bool"
     },
-    { "name": "Dropped Notes (>2)",
-      "code": "dn",
+    { "name": "Dropped Coral/Algae (>2)",
+      "code": "dca",
       "type": "bool"
     },
     { "name": "Make good<br>alliance partner?",
@@ -194,10 +189,9 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Comments",
-      "code": "co",
+      "code": "com",
       "type": "text",
       "size": 15,
       "maxSize": 99999
-    }
-  ]
-}`;
+    ]
+  }`;
