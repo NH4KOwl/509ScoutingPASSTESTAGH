@@ -27,7 +27,7 @@ Sub Save1PitQR()
 End Sub
 
 Public Function getInput()
-    getInput = InputBox("Scan QR Code", "2023 Match Scouting Input")
+    getInput = InputBox("Scan QR Code", "2024 Match Scouting Input")
 End Function
 
 Sub test()
