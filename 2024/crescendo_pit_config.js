@@ -8,7 +8,7 @@ var config_data = `
       "code": "s",
       "type": "text"
       },
-    { "name": "Team Number",
+    { "name": "gregr Number",
       "code": "t",
       "type": "number"
     },
