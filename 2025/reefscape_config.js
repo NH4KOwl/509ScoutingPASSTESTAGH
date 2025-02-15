@@ -1,4 +1,4 @@
-var config_data = '
+var config_data = `
 {
   "dataFormat": "tsv",
   "title": "Scouting PASS 2025",
@@ -195,5 +195,5 @@ var config_data = '
       "size": 15,
       "maxSize": 99999 }
     ]
-'
+`
 ;
