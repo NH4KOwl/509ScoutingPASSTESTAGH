@@ -85,7 +85,7 @@ var config_data = `
   "teleop": [
     { "name": "Coral Scored",
       "code": "tc",
-      "tyspe": "counter"
+      "type": "counter"
     },
     { "name": "Processor Algae Scored",
       "code": "tpa",
