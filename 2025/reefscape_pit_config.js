@@ -158,7 +158,7 @@ var config_data = `
     },
     {
       "name": "Comments",
-      "code": "comm",
+      "code": "c",
       "type": "text",
       "size": 20,
       "maxSize": 300
