@@ -5,7 +5,7 @@ var config_data = `
   "pitConfig": "true",
   "prematch": [
     {"name": "Scouter Initials", 
-      "code": "s",
+      "code": "si",
       "type": "text"
       },
     { "name": "Team #",
