@@ -15,7 +15,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2025weekzero", 
+      "defaultValue": "2025week0",
       "required": "false"
     },
     { "name": "Match Level",
