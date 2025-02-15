@@ -9,7 +9,7 @@ var config_data = `
       "type": "text"
       },
     { "name": "Team #",
-      "code": "t",
+      "code": "tn",
       "type": "number"
     },
     { "name": "Width",
@@ -18,7 +18,7 @@ var config_data = `
       "defaultValue": "0"
     },
     {"name": "Length", 
-     "code": "l", 
+     "code": "le", 
      "type": "number", 
      "defaultValue": "0"
     },
@@ -158,7 +158,7 @@ var config_data = `
     },
     {
       "name": "Comments",
-      "code": "co",
+      "code": "comm",
       "type": "text",
       "size": 20,
       "maxSize": 300
