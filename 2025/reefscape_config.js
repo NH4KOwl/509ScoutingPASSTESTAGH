@@ -160,7 +160,7 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Speed Rating",
-      "code": "sr",
+      "code": "spr",
       "type": "radio",
       "choices": {
         "1": "1 (slow)<br>",
